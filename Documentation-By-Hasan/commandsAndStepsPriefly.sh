@@ -4,9 +4,16 @@ npm -v
 
 cd {project_root_directory}
 
+npm install -g npm@latest
+npm install
+#if npm error then V
+
 #install npm within root directory of project
+npm cache clean 
 sudo npm install -g npm
 npm install
+
+npm i webpack webpack-cli 
 
 #Select build mode
         #The production configuration is used from webpack.prod.js when you run
@@ -44,3 +51,5 @@ npm i -D webpack-dev-server
 #installing cleaner plugin which deletes dist folder after rebuilding it by webpack-dev-server
 npm i -D clean-webpack-plugin
 
+#Install sass loader which is used by webpack builder to convert all sass files into one css file
+npm i -D style-loader node-sass css-loader sass-loader
